@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 10px;
+    padding: 0;
+}
+.wrapper {
+    width: 90%;
+}
+form {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+form input {
+    height: 30px;
+    width: 500px;
+    padding: 5px;
+}
+form button {
+    width: 100px;
+    height: 30px;
+}
+.result {
+    margin: 30px auto;
+    text-align: center;
+}
+.result p {
+    padding: 10px 0 0;
+}
+.stats {
+    margin: 50px auto;
+}
+.stats table {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+.stats table tr {
+    padding: 10px 0;
+}
+.stats table td {
+    padding: 5px;
+}
+.stats-link {
+    text-align: center;
+}

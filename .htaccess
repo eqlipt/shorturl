@@ -1,0 +1,17 @@
+AddDefaultCharset UTF-8
+Options -Indexes +FollowSymLinks
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{REQUEST_URI} ^/redirect\.php [NC]
+  RewriteRule ^(.*)$ index.php [L]
+
+  RewriteCond %{REQUEST_URI} !^/index\.php [NC]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ redirect.php?url=$1 [L,QSA]
+
+  
+</IfModule>
