@@ -13,8 +13,8 @@ Apache + modRewrite
 
 1. Run Apache and MySQL servers locally or choose a respective hosting
 2. Put project files and folders to desired directory keeping project structure
-3. Run shorturl.sql script to create database
-4. Configure db_credentials.php for database connection
+3. Run `shorturl.sql` script to create database
+4. Configure `db_credentials.php` for database connection
 5. That's it! Locate your project folder or web address in a browser
 
 You may set the lifiteme of URLs in `url.class.php` as `LINK_ACTIVE_DURATION` value\
